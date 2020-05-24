@@ -11,4 +11,6 @@ class Node:
 
     def set_next_node(self,another_node):
         self.link_to_next_node = another_node
-    
+
+    def get_value(self):
+        return self.data
