@@ -14,7 +14,6 @@ class Stack:
             item.set_next_node(self.top_item)
             self.top_item = item
             self.size += 1
-            print("Adding {} to the pizza stack!".format(value))
 
     # the following fuctions returns and remove the head node    
     def pop(self):
@@ -22,7 +21,6 @@ class Stack:
             item_to_remove = self.top_item
             self.top_item = item_to_remove.get_next_node()
             self.size = self.size -1
-            print("Delivering " + item_to_remove.get_node_data())
             return item_to_remove.get_node_data()
             
         else:
@@ -43,7 +41,10 @@ class Stack:
 
     def get_name(self):
         return self.name
-  
+    
+    def get_size(self):
+        return self.size
+
     def print_items(self):
         pointer = self.top_item
         print_list = []
