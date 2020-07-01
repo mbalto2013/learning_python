@@ -15,10 +15,11 @@ class HashMap:
 
     def compressor(self, hash_code):
         return hash_code % self.array_size
-    
+
     """
     How would you delete a key-value pair from this hash map?
     """
+
     def assign(self, key, value):
         array_index = self.compressor(self.hash(key))
         current_array_value = self.array[array_index]
