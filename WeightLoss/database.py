@@ -63,7 +63,7 @@ class Database:
         my_connection = None
 
         try:
-            query = f'INSERT INTO weight_loss (ssn,date_of_measurement,weight) ' \
+            query = f'INSERT INTO weight_loss (ssn,date_of_measurement,weight)' \
                     f'VALUES(' \
                     f'{user_weight.ssn},' \
                     f' "{user_weight.date_of_measurement}",' \
